@@ -32,7 +32,7 @@ function new(menu_dirs)
     programs['Utility'] = {}
     programs['Other'] = {}
 
-    for i, dir in ipairs(menu.dirs or all_menu_dirs) do
+    for i, dir in ipairs(menu_dirs or all_menu_dirs) do
 	local entries = utils.parse_dir(dir)
 	for j, program in ipairs(entries) do
 	    -- check whether to include in the menu
